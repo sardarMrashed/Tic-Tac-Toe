@@ -1,23 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="container-img">
-                <img src="../images/svg/cross.svg" alt="cross">
-                <img src="../images/svg/circle.svg" alt="circle">
-                <img src="../images/svg/cross-black.svg" alt="cross-black">`
-                <img src="../images/svg/reload.svg" alt="reload">
-                                </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="top-container">
+          <div class="logo-container">
+            <img src="../images/svg/cross.svg" alt="cross" />
+            <img src="../images/svg/circle.svg" alt="circle" />
+          </div>
+
+          <div class="indicator-container shadow">
+            <div class="indicator-img-container">
+              <img src="../images/svg/cross-grey.svg" alt="cross-black" />
             </div>
-       
-    </header>
-    
-</body>
+            <h3>TURN</h3>
+          </div>
+
+          <div class="reload-container">
+            <img src="../images/svg/reload.svg" alt="reload" />
+          </div>
+        </section>
+        <!-- SQUARES -->
+        <section class="container-2">
+          <div class="squares-container shadow"></div>
+          <div class="squares-container shadow">
+            <img
+              class="square-answer"
+              src="../images/svg/cross.svg"
+              alt="cross"
+            />
+          </div>
+          <div class="squares-container shadow">
+            <img
+              class="square-answer"
+              src="../images/svg/circle.svg"
+              alt="circle"
+            />
+          </div>
+          <div class="squares-container shadow">
+            <img
+              class="square-answer"
+              src="../images/svg/cross.svg"
+              alt="cross"
+            />
+          </div>
+          <div class="squares-container shadow"></div>
+          <div class="squares-container shadow">
+            <img
+              class="square-answer"
+              src="../images/svg/cross.svg"
+              alt="cross"
+            />
+          </div>
+          <div class="squares-container shadow"></div>
+          <div class="squares-container shadow"></div>
+          <div class="squares-container shadow"></div>
+        </section>
+        
+        <section class="bottom-container">
+          <div class="score-container">
+            <p>X (YOU)</p>
+            <span class="score">0</span>
+          </div>
+          <div class="score-container">
+            <p>Ties</p>
+            <span class="score">0</span>
+          </div>
+          <div class="score-container">
+            <p>0 (cpu)</p>
+            <span class="score">0</span>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
